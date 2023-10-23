@@ -1,6 +1,6 @@
-drop database if exists patient;
-create database patient;
-use patient;
+drop database if exists gp_surgery;
+create database gp_surgery;
+use gp_surgery;
 create table patient
 (
 	id	INT AUTO_INCREMENT,
