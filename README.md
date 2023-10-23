@@ -29,6 +29,10 @@ Once you are certain that your code is working and data is being automatically i
 
 Create a PHP program in your repo called visitList.php. The program should include the dbcon.php which you created in Part 1. The program should use the connection object stored in the $conn variable (from your dbcon.php file). Create $sql variable containing your SQL query - "select * from visit". Use the code here 
 
+# Part 4
+
+Copy your visitList.php file to a new file called visitListWithNames.php. Replace your SQL code ***"select * from visit"*** with the following SQL query ***"SELECT visit_date, visit_time, patient.Firstname, patient.Surname FROM visit INNER JOIN patient ON patient.id = visit.patient_id"***. Note that this query joins the visit table to the patient table effectively looking up the patient names and replacing the patientID with names to make the information more meaningful. Given this new query the columns in the resultant data are visit_date, visit_time, Firstname and Surname. Modify the code you created in Part 3 so that you use these new column header to create four simple PHP variables and then use those PHP variables then use those PHP variables to output data in rows and columns. 
+
 
 
 
