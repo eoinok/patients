@@ -25,6 +25,10 @@ Make a small adjustment to your code so that the line that echoes the SQL comman
 Add a few lines of code which execute the SQL query contained in the $sql variable against the database connection stored in $conn. If you don't have easy access to these five lines of PHP code which make up an if-else block from a previous example, you can get them here [PHP mysql insert statement](https://www.w3schools.com/php/php_mysql_insert.asp) - be sure and scroll down to the MySQLi Procedural example as opposed to the Objected Oriented example. Once you have included these lines verify that the submission of the form will cause the data inserted by the user to be inserted into the Visit table. Do this by doing a SELECT * from VISIT command in the SQL query window on HeidiSQL.
 Once you are certain that your code is working and data is being automatically inserted into the database you can commit and push your code.
 
+# Part 3
+
+Create a PHP program in your repo called visitList.php. The program should include the dbcon.php which you created in Part 1. The program should use the connection object stored in the $conn variable (from your dbcon.php file). Create $sql variable containing your SQL query - "select * from visit". Use the code here 
+
 
 
 
