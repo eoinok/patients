@@ -19,16 +19,7 @@ echo your $sql variable to the screen. Test your code. If the sql statement on t
 
 # Part 2
 
+Make a small adjustment to your code so that the line that echoes the SQL command to the screen is commented out. (to comment out a line of code in PHP use //).
+Add a few lines of code which execute the SQL query contained in the $sql variable against the database connection stored in $conn. To find these lines use 
 
-
-
-
-
-
-
-
-Change the action on the form so that when the Submit button is pushed the form data will be submitted to a PHP file called createNewBooking.php.
-Add two input boxes to the HTML form one which gets the member's ID for the booking and a second which gets the court ID make sure these input boxes use the names memberID and courtID respectively. Note the capitalisation on these names.
-Modify the createBooking.php file so that it contains an include statement that pulls in code from a file called dbcon.php. This file should contain your database credentials. When you have completed these changes try to create a new tennisclub booking using your form - visit http://localhost/week5lab-yourgithubid/newBooking.html. Use memberID = 2 and courtID = 3. This will output some SQL code to the screen. If the code looks correct, comment out the line in createNewBooking.php that echoes the screen and uncomment the subsequent block of code which executes the SQL command against the connection to the database. Try submitting your form again, it should say added new record successfully. To see if it worked, type Select * from booking in the HeidiSQL database application. Is your booking there? Try it again with values memberID = 13 and courtID = 15. What happened? Why was this? Write a comment in the PHP code of createNewBooking.php which explains why these numbers don't work. Commit and push your changes.
-Part 2
 
