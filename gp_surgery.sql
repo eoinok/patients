@@ -22,8 +22,8 @@ create table doctor
 create table visit
 (
 	id	INT auto_increment,
-	date	date,
-	time	time,
+	visit_date	date,
+	visit_time	time,
 	doctor_id	int,
 	patient_id	int,
 	cost		decimal(18,3),
@@ -44,10 +44,10 @@ Insert into doctor(Firstname,Surname,Specialism,HoursPerWeek) values('Mary','McF
 Insert into doctor(Firstname,Surname,Specialism,HoursPerWeek) values('Claire','Long','Neurology',50);
 Insert into doctor(Firstname,Surname,Specialism,HoursPerWeek) values('Joan','McDonnell','Cardiology',40);
 
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-02-20','15:00','3','1',40);
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-02-20','16:00','3','2',60);
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-02-21','10:00','5','4',40);
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-02-21','11:00','5','3',45);
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-02-25','11:00','2','5',100);
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-02-26','14:00','5','1',35);
-Insert into visit(DATE,TIME,doctor_id,patient_id,cost) values('2004-03-01','14:00','1','2',50);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-02-20','15:00','3','1',40);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-02-20','16:00','3','2',60);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-02-21','10:00','5','4',40);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-02-21','11:00','5','3',45);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-02-25','11:00','2','5',100);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-02-26','14:00','5','1',35);
+Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('2004-03-01','14:00','1','2',50);
