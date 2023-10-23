@@ -14,7 +14,7 @@ Your new PHP program should contain an include command that pulls in PHP code co
 
 The program should then pull values from the HTML FORM and assign them to simple PHP variables. 
 
-Once all the values from the form have been assigned to simple PHP variables they can be used to build a simple SQL "insert into" statement. To do this take one of the INSERT INTO statements from the patients.sql file, enclose this in quotation marks, and assign it to a PHP variable called $sql. 
+Once all the values from the form have been assigned to simple PHP variables they can be used to build a simple SQL "insert into" statement. To do this take one of the INSERT INTO statements from the gp_surgery.sql file, enclose this in quotation marks, and assign it to a PHP variable called $sql. 
 Modify this Insert into a statement so that rather than using hard-coded data, it uses values from the simple PHP variables that contain the values from the HTML FORM.
 
 echo your $sql variable to the screen. Test your code. If the SQL statement on the screen looks correct, then copy and paste it into HeidiSQL into a new query window. Verify that it works by executing your query. If the syntax of your SQL is correct a new row should be created in the Visit table. Once you have ensured that the SQL statement is correct, commit and push your code.
