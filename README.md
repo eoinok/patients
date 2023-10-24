@@ -4,7 +4,9 @@ Clone this repo into your www folder under laragon. In the command prompt cd int
 
 This lab further builds on your ability to connect PHP to a MySQL database and process data into and out of the database. By the end of this lab students will be able to:
 
-Gather data from a form and insert it into a database
+- Gather data from a form and insert it into a database
+- Retrieve data from a database using a join query and display it in a table
+
 
 # Part 1
 Copy and paste the SQL script from the gp_surgery.sql file in the starter code from the assignment. Place it in a new query window in HeidiSQL. Execute the query so that a new database will be created complete with three tables Patient, Doctor and Visit. Note which table(s) have Foreign Keys.
@@ -31,7 +33,7 @@ Create a PHP program in your repo called visitList.php. The program should inclu
 
 # Part 4
 
-Copy your visitList.php file to a new file called visitListWithNames.php. Replace your SQL code ***"select * from visit"*** with the following SQL query ***"SELECT visit_date, visit_time, patient.Firstname, patient.Surname FROM visit INNER JOIN patient ON patient.id = visit.patient_id"***. Note that this query joins the visit table to the patient table - effectively looking up the patient names and replacing the patientID with names to make the information more meaningful. Given this new query, the columns in the resultant data are visit_date, visit_time, Firstname and Surname. Modify the code you created in Part 3 so that you use these new column headers to create four simple PHP variables and then use those PHP variables then use those PHP variables to output data in rows and columns. 
+Copy your visitList.php file to a new file called visitListWithNames.php. Replace your SQL code ***"select * from visit"*** with the following SQL query ***"SELECT visit_date, visit_time, patient.Firstname, patient.Surname FROM visit INNER JOIN patient ON patient.id = visit.patient_id"***. This query joins the visit table to the patient table - effectively looking up the patient names and replacing the patientID with names to make the information more meaningful. **Note that some of the columns in this query start with capital letters and some start with lower case. When retrieving the data using the $row associative array you must use case sensitive indices - e.g. $row['visit_date'] and $row['Firstname'].** Given this new query, the columns in the resultant data are visit_date, visit_time, Firstname and Surname. Modify the code you created in Part 3 so that you use these new column headers to create four simple PHP variables and then use those PHP variables then use those PHP variables to output data in rows and columns. 
 
 
 
