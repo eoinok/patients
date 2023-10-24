@@ -29,7 +29,7 @@ Once you are certain that your code is working and data is being automatically i
 
 # Part 3
 
-Create a PHP program in your repo called visitList.php. The program should include the dbcon.php which you created in Part 1. The program should use the connection object stored in the $conn variable (from your dbcon.php file). Create $sql variable containing your SQL query - ***"select * from visit"***. Use the example in the slides entitled PHP Outputting HTML which pulls data from the databases and outputs the data using a loop wrapped in &lt;TR&gt;&lt;/TR&gt; and &lt;TD&gt;&lt;/TD&gt; tags.
+Create a PHP program in your repo called visitList.php. The program should include the dbcon.php which you created in Part 1. The program should use the connection object stored in the $conn variable (from your dbcon.php file). Create $sql variable containing your SQL query - ***"select * from visit"***. Use the example in the slides entitled PHP Outputting HTML which pulls data from the databases and outputs the data using a loop wrapped in &lt;TR&gt;&lt;/TR&gt; and &lt;TD&gt;&lt;/TD&gt; sdfatags.
 
 # Part 4
 
