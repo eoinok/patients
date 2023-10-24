@@ -4,8 +4,8 @@ Clone this repo into your www folder under laragon. In the command prompt cd int
 
 This lab further builds on your ability to connect PHP to a MySQL database and process data into and out of the database. By the end of this lab students will be able to:
 
-- Gather data from a form and insert it into a database
-- Retrieve data from a database using a join query and display it in a table
+-  Gather data from a form and insert it into a database
+-  Retrieve data from a database using a join query and display it in a table
 
 
 # Part 1
