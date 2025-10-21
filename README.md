@@ -9,7 +9,7 @@ This lab further builds on your ability to connect PHP to a MySQL database and p
 
 
 # Part 1
-Copy and paste the SQL script from the gp_surgery.sql file in the starter code from the assignment. Place it in a new query window in HeidiSQL. Execute the query so that a new database will be created complete with three tables Patient, Doctor and Visit. Note which table(s) have Foreign Keys.
+Copy and paste the SQL script from the gp_surgery.sql file in the starter code from the assignment. Place it in a new query window in MySQL Workbench. Execute the query so that a new database will be created complete with three tables Patient, Doctor and Visit. Note which table(s) have Foreign Keys.
 
 Given the form you have been given in the starter code called newVisit.html, write a PHP program that will gather data from the form and insert it into the Visit Table in the gp_surgery database. In order to do this you must figure out what to call your new file. This can be determined from the action attribute of the FORM tag in the newVisit.html file.
 Your new PHP program should contain an include command that pulls-in PHP code containing credentials to connect to the gp_surgery database. You can call this file dbcon.php and you may reuse code you have written in previous labs but remember the database name in the credentials will need to be changed.
@@ -23,8 +23,12 @@ echo your $sql variable to the screen. Test your code. If the SQL statement on t
 
 # Part 2
 
-Make a small adjustment to your code so that the line that echoes the SQL command to the screen is commented out. (to comment out a single line of code in PHP use // at the beginning of the line).
-Add a few lines of code that execute the SQL query contained in the $sql variable against the database connection stored in $conn. If you don't have easy access to these five lines of PHP code (which make up an if-else block from a previous example), you can get them here [PHP mysql insert statement](https://www.w3schools.com/php/php_mysql_insert.asp) (be sure and scroll down to the MySQLi Procedural example as opposed to the Objected Oriented example). Once you have included these lines, verify that the submission of the form will cause the data added by the user to be inserted into the Visit table. Do this by doing a ***SELECT * from VISIT*** command in the SQL query window on HeidiSQL.
+Make a small adjustment to your code so that the line that echoes the SQL command to the screen is commented out. (to comment out a single line of code in PHP use // at the beginning of the line). Add a line of code that will execute the SQL query contained in the $sql variable against the database connection stored in $conn (the $conn variable contains the database connection object from the dbconn.php file).
+Add a line of code that execute the SQL query contained in the $sql variable against the database connection stored in $conn.
+```
+mysqli_query($conn,$sql)
+```
+Once you have included these lines, verify that the submission of the form will cause the data added by the user to be inserted into the Visit table. Do this by doing a ***SELECT * from VISIT*** command in the SQL query window in MySQL Workbench.
 Once you are certain that your code is working and data is being automatically inserted into the database, you can commit and push your code.
 
 # Part 3
